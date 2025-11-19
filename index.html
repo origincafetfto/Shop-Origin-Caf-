@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORIGIN CAFÉ - The f*cking true origin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Café ORIGIN - El verdadero origen. Café orgánico de Finca Los Robles, Yecuatla, Veracruz. Single origin, cultivado a 1200m de altitud.">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-main">ORIGIN</span>
+                <span class="logo-sub">CAFÉ</span>
+            </div>
+            <div class="nav-links">
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#origen" class="nav-link">Origen</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <button class="cart-btn" id="cartBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">The f*cking</span>
+                    <span class="title-line">true origin</span>
+                </h1>
+                <p class="hero-subtitle">NOT TO STRONG</p>
+                <p class="hero-description">
+                    Desde la primera taza hasta la última, ORIGIN café acompaña tus momentos favoritos.
+                    Descubre la auténtica esencia del café orgánico de Finca Los Robles.
+                </p>
+                <button class="cta-btn" onclick="scrollToProducts()">
+                    Descubre Nuestros Cafés
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="coffee-illustration">
+                    <!-- SVG Illustration of coffee beans -->
+                    <svg class="beans-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 20C90 20 80 30 80 40C80 45 85 50 90 55L90 55C95 60 100 65 100 70C100 65 105 60 110 55L110 55C115 50 120 45 120 40C120 30 110 20 100 20Z" fill="#1D1D1F"/>
+                        <path d="M120 40C120 30 110 20 100 20C90 20 80 30 80 40C80 50 90 60 100 60C110 60 120 50 120 40Z" fill="#1D1D1F" opacity="0.7"/>
+                        <ellipse cx="105" cy="35" rx="2" ry="8" fill="#F4A492"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="productos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Cafés</h2>
+                <p class="section-description">
+                    Tres presentaciones exclusivas pensadas para ti, según cuánto disfrutes de tu café cada día.
+                    Todos nuestros productos son café orgánico de Finca Los Robles.
+                </p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-product="250g">
+                    <div class="product-badge">Single Origin</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="25" y="10" width="30" height="60" rx="4" fill="#1D1D1F"/>
+                                <rect x="27" y="15" width="26" height="8" rx="2" fill="#FFF5E1"/>
+                                <text x="40" y="32" text-anchor="middle" fill="#FFF5E1" font-family="Arial" font-size="8">ORIGIN</text>
+                                <text x="40" y="40" text-anchor="middle" fill="#FFF5E1" font-family="Arial" font-size="6">CAFÉ</text>
+                                <text x="40" y="48" text-anchor="middle" fill="#FFF5E1" font-family="Arial" font-size="6">250G</text>
+                                <rect x="27" y="52" width="26" height="4" rx="2" fill="#F4A492"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Café ORIGIN Finca Los Robles</h3>
+                        <p class="product-weight">250g</p>
+                        <p class="product-description">
+                            Para probar y descubrir tu sabor favorito. Perfecta si quieres experimentar con un nuevo café, darte un gusto o hacer un regalo especial.
+                        </p>
+                        <div class="product-features">
+                            <span class="feature-tag">Orgánico</span>
+                            <span class="feature-tag">Single Origin</span>
+                            <span class="feature-tag">1200m altitud</span>
+                        </div>
+                        <div class="product-price">$115</div>
+                        <button class="add-to-cart-btn" onclick="addToCart('250g', 115)">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card featured" data-product="400g">
+                    <div class="featured-badge">Más Popular</div>
+                    <div class="product-badge">Single Origin</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="22" y="8" width="36" height="64" rx="4" fill="#1D1D1F"/>
+                                <rect x="25" y="13" width="30" height="10" rx="2" fill="#FFF5E1"/>
+                                <text x="40" y="32" text-anchor="middle" fill="#FFF5E1" font-family="Arial" font-size="10">ORIGIN</text>
+                                <text x="40" y="42" text-anchor="middle" fill="#FFF5E1" font-family="Arial" font-size="8">CAFÉ</text>
+                                <text x="40" y="52" text-anchor="middle" fill="#FFF5E1" font-family="Arial" font-size="8">400G</text>
+                                <rect x="25" y="58" width="30" height="4" rx="2" fill="#F4A492"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Café ORIGIN Finca Los Robles</h3>
+                        <p class="product-weight">400g</p>
+                        <p class="product-description">
+                            Para los que disfrutan su taza diaria. La cantidad justa para quienes no perdonan su dosis matutina y buscan mantenerlo siempre recién molido y fresco.
+                        </p>
+                        <div class="product-features">
+                            <span class="feature-tag">Orgánico</span>
+                            <span class="feature-tag">Single Origin</span>
+                            <span class="feature-tag">1200m altitud</span>
+                        </div>
+                        <div class="product-price">$220</div>
+                        <button class="add-to-cart-btn" onclick="addToCart('400g', 220)">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-product="1kg">
+                    <div class="product-badge">Single Origin</div>
+                    <div class="product-badge value">Mejor Valor</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="18" y="5" width="44" height="70" rx="4" fill="#1D1D1F"/>
+                                <rect x="22" y="10" width="36" height="12" rx="2" fill="#FFF5E1"/>
+                                <text x="40" y="30" text-anchor="middle" fill="#FFF5E1" font-family="Arial" font-size="12">ORIGIN</text>
+                                <text x="40" y="42" text-anchor="middle" fill="#FFF5E1" font-family="Arial" font-size="10">CAFÉ</text>
+                                <text x="40" y="54" text-anchor="middle" fill="#FFF5E1" font-family="Arial" font-size="10">1KG</text>
+                                <rect x="22" y="62" width="36" height="4" rx="2" fill="#F4A492"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Café ORIGIN Finca Los Robles</h3>
+                        <p class="product-weight">1kg</p>
+                        <p class="product-description">
+                            Para los verdaderos amantes del café. Ideal si consumes café a diario en grandes cantidades o te gusta compartirlo en casa, oficina o cafetería.
+                        </p>
+                        <div class="product-features">
+                            <span class="feature-tag">Orgánico</span>
+                            <span class="feature-tag">Single Origin</span>
+                            <span class="feature-tag">1200m altitud</span>
+                        </div>
+                        <div class="product-price">$410</div>
+                        <button class="add-to-cart-btn" onclick="addToCart('1kg', 410)">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Origin Section -->
+    <section class="origin" id="origen">
+        <div class="container">
+            <div class="origin-content">
+                <div class="origin-text">
+                    <h2 class="origin-title">El Verdadero Origen</h2>
+                    <div class="origin-description">
+                        <p class="origin-paragraph">
+                            En Yecuatla, Veracruz, donde el náhuatl significa "lugar de las tres serpientes", 
+                            se encuentra Finca Los Robles. Una tierra rica en ríos, montañas y gran biodiversidad 
+                            que contribuye a un café lleno de carácter.
+                        </p>
+                        <p class="origin-paragraph">
+                            Cultivado entre 1200 y 1600 metros sobre el nivel del mar, nuestro café orgánico 
+                            se caracteriza por su fragancia y aroma medio-alto, con notas distintivas de 
+                            piloncillo, almendra y chocolate.
+                        </p>
+                        <p class="origin-paragraph">
+                            El retrogusto duradero con toques de caramelo y nuez tostada, junto con nuestro 
+                            perfil "NOT TO STRONG", lo convierte en el compañero perfecto para tus momentos favoritos.
+                        </p>
+                    </div>
+                    <div class="origin-stats">
+                        <div class="stat">
+                            <span class="stat-number">1200m</span>
+                            <span class="stat-label">Altitud</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Veracruz</span>
+                            <span class="stat-label">Región</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Orgánico</span>
+                            <span class="stat-label">Certificación</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="origin-visual">
+                    <div class="origin-illustration">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Mountains -->
+                            <path d="M0 250 L100 150 L200 200 L300 100 L400 250 Z" fill="#E59482" opacity="0.3"/>
+                            <!-- Coffee plants -->
+                            <ellipse cx="150" cy="220" rx="8" ry="15" fill="#1D1D1F"/>
+                            <ellipse cx="170" cy="225" rx="6" ry="12" fill="#1D1D1F"/>
+                            <ellipse cx="130" cy="225" rx="6" ry="12" fill="#1D1D1F"/>
+                            <!-- Coffee beans -->
+                            <ellipse cx="200" cy="200" rx="4" ry="8" fill="#1D1D1F"/>
+                            <ellipse cx="190" cy="190" rx="3" ry="6" fill="#1D1D1F"/>
+                            <ellipse cx="210" cy="190" rx="3" ry="6" fill="#1D1D1F"/>
+                            <!-- Stylized serpent -->
+                            <path d="M50 180 Q70 170 90 180 Q110 190 130 180 Q150 170 170 180 Q190 190 210 180" 
+                                  stroke="#1D1D1F" stroke-width="2" fill="none" opacity="0.6"/>
+                            <circle cx="60" cy="175" r="3" fill="#1D1D1F"/>
+                            <circle cx="55" cy="173" r="1" fill="#FFF5E1"/>
+                            <!-- Decorative dots (Totonac pattern) -->
+                            <circle cx="80" cy="160" r="2" fill="#F4A492"/>
+                            <circle cx="90" cy="165" r="2" fill="#F4A492"/>
+                            <circle cx="100" cy="160" r="2" fill="#F4A492"/>
+                            <circle cx="110" cy="165" r="2" fill="#F4A492"/>
+                            <circle cx="120" cy="160" r="2" fill="#F4A492"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">¿Listo para el verdadero origen?</h2>
+                <p class="contact-description">
+                    Contáctanos para hacer tu pedido o conocer más sobre nuestros procesos.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Teléfono:</span>
+                        <span class="contact-value">+52 (xxx) xxx-xxxx</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Email:</span>
+                        <span class="contact-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a3cbcccfc2e3ccd1cac4cacdc0c2c5c68dcedb">[email&#160;protected]</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Ubicación:</span>
+                        <span class="contact-value">Yecuatla, Veracruz, México</span>
+                    </div>
+                </div>
+                <button class="cta-btn-secondary">Hacer Pedido</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Tu Carrito</h3>
+                <button class="cart-close" onclick="closeCart()">×</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Tu carrito está vacío</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0</span>
+                </div>
+                <button class="checkout-btn" onclick="proceedToInstagram()">
+                    Enviar por Instagram
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
